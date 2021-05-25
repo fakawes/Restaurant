@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #FF6F61;
+}
+.head{
+    float: left;
+    width: 100%;
+    text-align: center;
+    background-color: red;
+    
+}
+
+.main-container {
+    /* overflow: auto; */
+    background-color: yellow;
+}
+
+.menu {
+    float: left;
+    width: 20%;
+    text-align: center;
+    
+}
+.menu a {
+    display: block;
+    background-color: #6B5B95;
+    margin-top: 10px;
+    
+    text-decoration: none;
+    color: #FF6F61;
+
+    font-style: bold;
+    
+}
+.navbar{
+    align-items: center;
+}
+
+.nav-item{
+    width: 60%;
+    
+    margin-left: 20%;
+
+    list-style: none
+}
+.hamburger{
+    display: none;
+    position: absolute;
+    
+    right: 0;
+    margin-right: 10px;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #101010;
+}
+.main{
+    width: 60%;
+    text-align: center;    
+    float: left;
+    padding: 10px;
+    /* background-color: blue; */
+}
+
+.right{
+    width: 20%;
+    margin-top: 7px;
+    float: left;
+    text-align: center;
+    padding: 15px;
+    /* background-color: #6B5B95; */
+}
+
+.footer {
+    text-align: center;  
+    background-color: green;
+    margin-top: 7px;
+}
+/* If the media of the screen is under 620px (a mobile phone) resize teh webpage  */
+
+@media only screen and (max-width: 768px) {
+
+    .menu, .right, .main {
+        width: 100%
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+
+        background-color: #FF6F61;
+
+        box-shadow: 5px 5px 10px 5px #e7857c;
+
+        font-size: 1.5rem;
+        transition: left .5s ease-in-out;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
