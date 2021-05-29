@@ -18,22 +18,63 @@ body{
     /* overflow: auto; */
     background-color: yellow;
 }
+.floorground-container{
+    position: relative;
+}
+.floorground-container img{
+    /* width: 100%; */
+}
+.chair{
+    position: absolute;
+    top: 18%;
+    left: 63%;
+}
+#chair2{
+    position: absolute;
+    top: 10%;
+    left: 63%;
+}
+#chair3{
+    position: absolute;
+    top: 9%;
+    left: 68%;
+    transform: rotate(180deg)
+}
 
-.menu {
+#chair4{
+    position: absolute;
+    top: 15%;
+    left: 68%;
+    transform: rotate(180deg)
+}
+#chair5{
+    position: absolute;
+    top: 23%;
+    left: 66%;
+    transform: rotate(270deg);
+}
+#chair6{
+
+    position: absolute;
+    top: 7%;
+    left: 65%;
+    transform: rotate(90deg);
+
+}
+.menu{
     float: left;
     width: 20%;
-    text-align: center;
-    
+    text-align: center; 
 }
 .menu a {
     display: block;
     background-color: #6B5B95;
     margin-top: 10px;
-    
+    width: 100%;
     text-decoration: none;
     color: #FF6F61;
 
-    font-style: bold;
+    /* font-style: bold; */
     
 }
 .navbar{
@@ -78,10 +119,14 @@ body{
     /* background-color: #6B5B95; */
 }
 
+
 .footer {
+    display: inline-block;
     text-align: center;  
     background-color: green;
     margin-top: 7px;
+
+    width: 100%
 }
 /* If the media of the screen is under 620px (a mobile phone) resize teh webpage  */
 
