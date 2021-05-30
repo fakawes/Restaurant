@@ -17,3 +17,7 @@ function closeMenu(){
     hamburger.classList.remove('active')
     navbar.classList.remove('active')
 }
+
+// const chair = document.getElementById('chair7')
+
+// chair.style.backgroundColor = 'red'
