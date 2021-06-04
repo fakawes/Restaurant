@@ -22,101 +22,238 @@ body{
     position: relative;
 }
 
-.chair{
-    position: absolute;
-    top: 22%;
-    left: 63%;
-}
-#chair2{
-    position: absolute;
-    top: 13%;
-    left: 63%;
-}
-#chair3{
-    position: absolute;
-    top: 13%;
-    left: 68%;
-    transform: rotate(180deg);
-}
 
-#chair4{
-    position: absolute;
-    top: 20%;
-    left: 68%;
-    transform: rotate(180deg);
-}
-#chair5{
-    position: absolute;
-    top: 26%;
-    left: 66%;
-    transform: rotate(270deg);
-}
-#chair6{
-    position: absolute;
-    top: 7%;
-    left: 65%;
-    transform: rotate(90deg);
-
-}
 #chair-container{
     height: 100%;
     width: 100%;
 }
+.chair{
+    border-style: solid;
+    border-color: blue;
+    border-width: 5px;
+    width: 30%;
+    height: 65%;
+    border-radius: 80%;
+}
+.round-chair{
+    height: 30% !important;
+}
 .left-head-chair{
     position: absolute;
-    top: 14%;
+    top: 15%;
     left: -30%;
-    filter: invert(1);
+
 }
 
 .right-head-chair{
     position: absolute;
-    top: -3%;
+    top: 15%;
     right: -30%;
-    transform: rotate(180deg);
+    /* border-style: solid;
+    border-color: blue;
+    border-width: 5px;
+    width: 30%;
+    height: 65%;
+    border-radius: 80%; */
 }
 .top-left-chair{
     position: absolute;
-    top: -50%;
+    top: -70%;
     left: 20%;
-    transform: rotate(270deg);
+/*     
+    border-style: solid;
+    border-color: blue;
+    border-width: 5px;
+    width: 30%;
+    height: 65%;
+    border-radius: 80%; */
 }
 .top-right-chair{
     position: absolute;
-    top: -50%;
-    right: 20%;
-    transform: rotate(270deg);
+    top: -70%;
+    right: 10%;
+    /* border-style: solid;
+    border-color: blue;
+    border-width: 5px;
+    width: 30%;
+    height: 65%;
+    border-radius: 80%; */
 }
 .bottom-left-chair{
     position: absolute;
     left: 20%;
-    bottom: -102%;
-    transform: rotate(270deg);
-    
+    bottom: -70%;
+    /* border-style: solid;
+    border-color: blue;
+    border-width: 5px;
+    width: 30%;
+    height: 65%;
+    border-radius: 80%; */
 }
 .bottom-right-chair{
     position: absolute;
-    right: 20%;
-    bottom: -102%;
-    transform: rotate(270deg);
+    right: 10%;
+    bottom: -70%;
+    /* border-style: solid;
+    border-color: blue;
+    border-width: 5px;
+    width: 30%;
+    height: 65%;
+    border-radius: 80%; */
 }
 
-#window-table { 
+.window-table { 
     width: 7%;
     height: 9%;
     position: absolute;
     left: 87%;
-    top: 29%;
+    
     background-color: red;
     border-style: solid;
     border-width: 3px;
 }
+#window-table-one{ 
+    top: 29%;
+}
+#window-table-two{
+    top: 53%;
+}
+#window-table-three{ 
+    top: 75%;
+}
+
+.straight-table{
+    width: 7%;
+    height: 9%;
+    position: absolute;
+    background-color: red;
+    border-style: solid;
+    border-width: 3px;
+    transform: rotate(90deg);
+}
+#straight-table-one{
+    left: 62%;
+    top: 13%;
+}
+#straight-table-two{
+    left: 72%;
+    top: 13%;
+}
+#straight-table-three{
+    left: 52%;
+    top: 41%;
+}
+#straight-table-four{
+    left: 62%;
+    top: 41%;
+}
+
+#straight-table-five{
+    left: 72%;
+    top: 41%;
+}
+#straight-table-six{
+    left: 52%;
+    top:70%;
+}
+
+#straight-table-seven{
+    left: 62%;
+    top:70%;
+}
+#straight-table-eight{
+    left:72%;
+    top:70%;
+}
+
+
 #chair-container{
     /* background-color: blue; */
     position: relative;
 }
+#round-table{
+    width: 6%;
+    height: 15%;
+    position: absolute;
+    background-color: red;
+    border-style: solid;
+    border-width: 3px;
+    transform: rotate(90deg);
+    left: 53%;
+    top: 11%;
+    border-radius: 80%;
+}
+.round-table-top{
+    position: absolute;
+    left: -25%;
+    top: 39%;
+    /* border-style: solid;
+    border-color: blue;
+    border-width: 5px;
+    width: 30%;
+    height: 33%;
+    border-radius: 80%; */
+}
+.round-table-right-top {
+    position: absolute;
+    
+    top: -16%;
+    left: 0%;
+    /* border-style: solid;
+    border-color: blue;
+    border-width: 5px;
+    width: 30%;
+    height: 33%;
+    border-radius: 80%; */
+}
 
+.round-table-right-bottom{
+    position: absolute;
+    top: -16%;
+    left: 66%;
+    
+    /* border-style: solid;
+    border-color: blue;
+    border-width: 5px;
+    width: 30%;
+    height: 33%;
+    border-radius: 80%; */
+}
 
+.round-table-left-top{
+    position: absolute;
+    top: 90%;
+    left: 6%;
+    /* border-style: solid;
+    border-color: blue;
+    border-width: 5px;
+    width: 30%;
+    height: 33%;
+    border-radius: 80%; */
+}
+.round-table-left-bottom{
+    position: absolute;
+    left: 65%;
+    top: 90%;
+    /* border-style: solid;
+    border-color: blue;
+    border-width: 5px;
+    width: 30%;
+    height: 33%;
+    border-radius: 80%; */
+}
+
+.round-table-bottom{    
+    position: absolute;
+    top: 39%;
+    left: 103%;
+    /* border-style: solid;
+    border-color: blue;
+    border-width: 5px;
+    width: 30%;
+    height: 33%;
+    border-radius: 80%; */
+}
 
 .menu{
     float: left;
