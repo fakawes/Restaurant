@@ -28,12 +28,16 @@ body{
     width: 100%;
 }
 .chair{
+    width: 30%;
+    height: 65%;
+    background-color: blue;
+
     border-style: solid;
     border-color: blue;
     border-width: 5px;
-    width: 30%;
-    height: 65%;
     border-radius: 80%;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0 0 2px 1px blue;
 }
 .round-chair{
     height: 30% !important;
@@ -49,57 +53,28 @@ body{
     position: absolute;
     top: 15%;
     right: -30%;
-    /* border-style: solid;
-    border-color: blue;
-    border-width: 5px;
-    width: 30%;
-    height: 65%;
-    border-radius: 80%; */
 }
 .top-left-chair{
     position: absolute;
     top: -70%;
     left: 20%;
-/*     
-    border-style: solid;
-    border-color: blue;
-    border-width: 5px;
-    width: 30%;
-    height: 65%;
-    border-radius: 80%; */
+    border-radius: 80%; 
 }
 .top-right-chair{
     position: absolute;
     top: -70%;
     right: 10%;
-    /* border-style: solid;
-    border-color: blue;
-    border-width: 5px;
-    width: 30%;
-    height: 65%;
-    border-radius: 80%; */
 }
 .bottom-left-chair{
     position: absolute;
     left: 20%;
     bottom: -70%;
-    /* border-style: solid;
-    border-color: blue;
-    border-width: 5px;
-    width: 30%;
-    height: 65%;
-    border-radius: 80%; */
+    border-radius: 80%; 
 }
 .bottom-right-chair{
     position: absolute;
     right: 10%;
     bottom: -70%;
-    /* border-style: solid;
-    border-color: blue;
-    border-width: 5px;
-    width: 30%;
-    height: 65%;
-    border-radius: 80%; */
 }
 
 .window-table { 
@@ -111,6 +86,10 @@ body{
     background-color: red;
     border-style: solid;
     border-width: 3px;
+    border-color: red;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+
+    box-shadow: 0 0 3px 2px red;
 }
 #window-table-one{ 
     top: 29%;
@@ -129,7 +108,12 @@ body{
     background-color: red;
     border-style: solid;
     border-width: 3px;
+    border-color: red;
+    
     transform: rotate(90deg);
+
+
+    box-shadow: 0 0 3px 2px red;
 }
 #straight-table-one{
     left: 62%;
@@ -178,81 +162,49 @@ body{
     background-color: red;
     border-style: solid;
     border-width: 3px;
+    border-color: red;
+ 
     transform: rotate(90deg);
     left: 53%;
     top: 11%;
     border-radius: 80%;
+
+    box-shadow: 0 0 3px 2px red;
 }
 .round-table-top{
     position: absolute;
     left: -25%;
     top: 39%;
-    /* border-style: solid;
-    border-color: blue;
-    border-width: 5px;
-    width: 30%;
-    height: 33%;
-    border-radius: 80%; */
 }
 .round-table-right-top {
     position: absolute;
     
     top: -16%;
     left: 0%;
-    /* border-style: solid;
-    border-color: blue;
-    border-width: 5px;
-    width: 30%;
-    height: 33%;
-    border-radius: 80%; */
 }
 
 .round-table-right-bottom{
     position: absolute;
     top: -16%;
     left: 66%;
-    
-    /* border-style: solid;
-    border-color: blue;
-    border-width: 5px;
-    width: 30%;
-    height: 33%;
-    border-radius: 80%; */
 }
 
 .round-table-left-top{
     position: absolute;
     top: 90%;
     left: 6%;
-    /* border-style: solid;
-    border-color: blue;
-    border-width: 5px;
-    width: 30%;
-    height: 33%;
-    border-radius: 80%; */
+
 }
 .round-table-left-bottom{
     position: absolute;
     left: 65%;
     top: 90%;
-    /* border-style: solid;
-    border-color: blue;
-    border-width: 5px;
-    width: 30%;
-    height: 33%;
-    border-radius: 80%; */
 }
 
 .round-table-bottom{    
     position: absolute;
     top: 39%;
     left: 103%;
-    /* border-style: solid;
-    border-color: blue;
-    border-width: 5px;
-    width: 30%;
-    height: 33%;
-    border-radius: 80%; */
 }
 
 .menu{
@@ -266,9 +218,14 @@ body{
     margin-top: 10px;
     width: 100%;
     text-decoration: none;
+    font-weight: bold;
     color: #FF6F61;
-
-    /* font-style: bold; */
+    
+    border: solid;
+    border-color: #6B5B95;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 0 0 1px 1px #6b5b95;
     
 }
 .navbar{
@@ -276,9 +233,9 @@ body{
 }
 
 .nav-item{
-    width: 60%;
+    width: 100%;
     
-    margin-left: 20%;
+    /* margin-left: 20%; */
 
     list-style: none
 }
@@ -317,7 +274,7 @@ body{
 .footer {
     display: inline-block;
     text-align: center;  
-    background-color: green;
+    background-color: #e6847b;
     margin-top: 7px;
 
     width: 100%
